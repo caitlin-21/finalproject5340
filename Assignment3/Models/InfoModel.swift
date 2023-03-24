@@ -2,7 +2,7 @@
 //  InfoModel.swift
 //  Assignment3
 //
-//  Created by Sherry Johnson on 3/24/23.
+//  Created by Caitlin Johnson on 3/24/23.
 //
 
 import Foundation

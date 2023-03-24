@@ -19,6 +19,7 @@ struct CharacterModel : Codable, Identifiable {
     let species : String
     let gender : String
     let image : String
+    let episode : [String]
     
 }
 
