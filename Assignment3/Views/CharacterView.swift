@@ -16,7 +16,7 @@ struct CharacterView: View {
             List {
                 ForEach(charactervm.characterData) { character in
                 NavigationLink {
-                    TriviaDetails()
+                    CharacterDetails(data: character)
                 } label: {
                     Text(character.name)
                 }

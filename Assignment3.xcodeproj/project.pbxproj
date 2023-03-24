@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A429CD1EE500FFF51B /* CharacterViewModel.swift */; };
 		409344A729CD200E00FFF51B /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A629CD200E00FFF51B /* CharacterModel.swift */; };
-		409344AB29CD289900FFF51B /* TriviaDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AA29CD289900FFF51B /* TriviaDetails.swift */; };
-		409344AD29CD290F00FFF51B /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AC29CD290F00FFF51B /* AnswersView.swift */; };
+		409344AB29CD289900FFF51B /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AA29CD289900FFF51B /* CharacterDetails.swift */; };
+		409344AD29CD290F00FFF51B /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AC29CD290F00FFF51B /* CharacterImageView.swift */; };
 		409344B129CD5CFA00FFF51B /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344B029CD5CFA00FFF51B /* InfoModel.swift */; };
 		ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E03F29BE957F00DD981A /* Assignment3App.swift */; };
 		ACF5E04229BE957F00DD981A /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* CharacterView.swift */; };
@@ -21,8 +21,8 @@
 /* Begin PBXFileReference section */
 		409344A429CD1EE500FFF51B /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		409344A629CD200E00FFF51B /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
-		409344AA29CD289900FFF51B /* TriviaDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaDetails.swift; sourceTree = "<group>"; };
-		409344AC29CD290F00FFF51B /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
+		409344AA29CD289900FFF51B /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
+		409344AC29CD290F00FFF51B /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
 		409344B029CD5CFA00FFF51B /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		ACF5E03C29BE957F00DD981A /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF5E03F29BE957F00DD981A /* Assignment3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3App.swift; sourceTree = "<group>"; };
@@ -46,8 +46,8 @@
 			isa = PBXGroup;
 			children = (
 				ACF5E04129BE957F00DD981A /* CharacterView.swift */,
-				409344AA29CD289900FFF51B /* TriviaDetails.swift */,
-				409344AC29CD290F00FFF51B /* AnswersView.swift */,
+				409344AA29CD289900FFF51B /* CharacterDetails.swift */,
+				409344AC29CD290F00FFF51B /* CharacterImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,11 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				409344A729CD200E00FFF51B /* CharacterModel.swift in Sources */,
-				409344AB29CD289900FFF51B /* TriviaDetails.swift in Sources */,
+				409344AB29CD289900FFF51B /* CharacterDetails.swift in Sources */,
 				409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */,
 				ACF5E04229BE957F00DD981A /* CharacterView.swift in Sources */,
 				409344B129CD5CFA00FFF51B /* InfoModel.swift in Sources */,
-				409344AD29CD290F00FFF51B /* AnswersView.swift in Sources */,
+				409344AD29CD290F00FFF51B /* CharacterImageView.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
