@@ -1,6 +1,6 @@
 //
-//  TriviaViewModel.swift
-//  Assignment3
+//  CharacterViewModel.swift
+//  FinalProject
 //
 //  Created by Caitlin Johnson on 3/23/23.
 //

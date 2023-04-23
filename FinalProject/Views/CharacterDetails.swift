@@ -1,6 +1,6 @@
 //
-//  TriviaDetails.swift
-//  Assignment3
+//  CharacterDetails.swift
+//  FinalProject
 //
 //  Created by Caitlin Johnson on 3/23/23.
 //
@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterDetails: View {
     var data : CharacterModel
+    @State var note = NoteModel(title: "", noteData: "")
     var body: some View {
         VStack {
             Text("Details for \(data.name)")
@@ -23,6 +24,16 @@ struct CharacterDetails: View {
                 Text("Species: \(data.species)")
                 Text("Gender: \(data.gender)")
                 Text("Appearances: \(data.episode.count)")
+                Section {
+                    NavigationLink {
+                        NoteDetail(note: $note)
+                    }
+                label: {
+                    Text("New note")
+                        .foregroundColor(Color.gray)
+                        .font(.system(size: 15))
+                }
+                }
             } .font(.system(size: 24))
             
         }

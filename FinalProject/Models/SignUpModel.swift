@@ -2,7 +2,7 @@
 //  SignUpModel.swift
 //  FinalProject
 //
-//  Created by Sherry Johnson on 4/22/23.
+//  Created by Caitlin Johnson on 4/22/23.
 //
 
 import Foundation

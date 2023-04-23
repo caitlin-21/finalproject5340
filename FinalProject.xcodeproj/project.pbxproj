@@ -24,6 +24,10 @@
 		402BC9C329F49118006D666B /* FirebasePhoneAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 402BC9C229F49118006D666B /* FirebasePhoneAuthUI */; };
 		402BC9C529F49118006D666B /* FirebaseStorageUI in Frameworks */ = {isa = PBXBuildFile; productRef = 402BC9C429F49118006D666B /* FirebaseStorageUI */; };
 		402BC9C729F4A3FB006D666B /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9C629F4A3FB006D666B /* SignUpModel.swift */; };
+		402BC9C929F5C448006D666B /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9C829F5C448006D666B /* NoteModel.swift */; };
+		402BC9CB29F5C4AC006D666B /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9CA29F5C4AC006D666B /* NoteViewModel.swift */; };
+		402BC9CD29F5C4F2006D666B /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9CC29F5C4F2006D666B /* NoteView.swift */; };
+		402BC9CF29F5C57F006D666B /* NoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9CE29F5C57F006D666B /* NoteDetail.swift */; };
 		409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A429CD1EE500FFF51B /* CharacterViewModel.swift */; };
 		409344A729CD200E00FFF51B /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A629CD200E00FFF51B /* CharacterModel.swift */; };
 		409344AB29CD289900FFF51B /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AA29CD289900FFF51B /* CharacterDetails.swift */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		402BC99629F4883B006D666B /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		402BC9C629F4A3FB006D666B /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		402BC9C829F5C448006D666B /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		402BC9CA29F5C4AC006D666B /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		402BC9CC29F5C4F2006D666B /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		402BC9CE29F5C57F006D666B /* NoteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetail.swift; sourceTree = "<group>"; };
 		409344A429CD1EE500FFF51B /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		409344A629CD200E00FFF51B /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		409344AA29CD289900FFF51B /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
@@ -85,6 +93,8 @@
 				409344AA29CD289900FFF51B /* CharacterDetails.swift */,
 				409344AC29CD290F00FFF51B /* CharacterImageView.swift */,
 				402BC99629F4883B006D666B /* SignIn.swift */,
+				402BC9CC29F5C4F2006D666B /* NoteView.swift */,
+				402BC9CE29F5C57F006D666B /* NoteDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +106,8 @@
 				409344A629CD200E00FFF51B /* CharacterModel.swift */,
 				409344B029CD5CFA00FFF51B /* InfoModel.swift */,
 				402BC9C629F4A3FB006D666B /* SignUpModel.swift */,
+				402BC9C829F5C448006D666B /* NoteModel.swift */,
+				402BC9CA29F5C4AC006D666B /* NoteViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,11 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402BC9CF29F5C57F006D666B /* NoteDetail.swift in Sources */,
 				409344A729CD200E00FFF51B /* CharacterModel.swift in Sources */,
 				409344AB29CD289900FFF51B /* CharacterDetails.swift in Sources */,
+				402BC9CD29F5C4F2006D666B /* NoteView.swift in Sources */,
+				402BC9CB29F5C4AC006D666B /* NoteViewModel.swift in Sources */,
 				409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */,
 				402BC9C729F4A3FB006D666B /* SignUpModel.swift in Sources */,
 				ACF5E04229BE957F00DD981A /* CharacterView.swift in Sources */,
+				402BC9C929F5C448006D666B /* NoteModel.swift in Sources */,
 				409344B129CD5CFA00FFF51B /* InfoModel.swift in Sources */,
 				409344AD29CD290F00FFF51B /* CharacterImageView.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* finalApp.swift in Sources */,

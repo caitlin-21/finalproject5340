@@ -1,6 +1,6 @@
 //
-//  DogModel.swift
-//  Assignment3
+//  CharacterModel.swift
+//  FinalProject
 //
 //  Created by Caitlin Johnson on 3/23/23.
 //

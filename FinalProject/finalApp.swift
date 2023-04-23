@@ -1,5 +1,5 @@
 //
-// Assignment3App.swift : Assignment3
+// finalApp.swift : Final Project
 //
 // Copyright © 2023 Auburn University.
 // All Rights Reserved.

@@ -1,6 +1,6 @@
 //
 //  InfoModel.swift
-//  Assignment3
+//  FinalProject
 //
 //  Created by Caitlin Johnson on 3/24/23.
 //
