@@ -16,7 +16,7 @@ import FirebaseAuth
         
         var body: some View {
             if userIsLoggedIn {
-                CharacterView()
+                IntroNavigation()
             } else {
                 content
             }
