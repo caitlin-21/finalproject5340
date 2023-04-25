@@ -12,4 +12,5 @@ struct NoteModel : Codable, Identifiable {
     @DocumentID var id : String?
     var title : String
     var noteData : String
+    var character : String
 }

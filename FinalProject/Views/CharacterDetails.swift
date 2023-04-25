@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterDetails: View {
     var data : CharacterModel
-    @State var note = NoteModel(title: "", noteData: "")
+    @State var note = NoteModel(title: "", noteData: "", character: "")
     var body: some View {
         VStack {
             Text("Details for \(data.name)")
@@ -26,7 +26,7 @@ struct CharacterDetails: View {
                 Text("Appearances: \(data.episode.count)")
                 Section {
                     NavigationLink {
-                        NoteDetail(note: $note)
+                        NoteDetail(note: $note, character: data.name)
                     }
                 label: {
                     Text("New note")

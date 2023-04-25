@@ -1,13 +1,14 @@
 //
-//  NoteView.swift
+//  CharacterNoteView.swift
 //  FinalProject
 //
-//  Created by Caitlin Johnson on 4/23/23.
+//  Created by Sherry Johnson on 4/24/23.
 //
 
 import SwiftUI
 
-struct NoteView: View {
+struct CharacterNoteView: View {
+    @State var character : String
     @StateObject var noteApp = NoteViewModel()
     @State var note = NoteModel(title: "", noteData: "", character: "")
     var body: some View {
@@ -21,30 +22,21 @@ struct NoteView: View {
                     Text(note.title)
                 }
                 }
-                Section {
-                    NavigationLink {
-                        NoteDetail(note: $note, character: note.character)
-                    }
-                label: {
-                    Text("New note")
-                        .foregroundColor(Color.gray)
-                        .font(.system(size: 15))
-                }
-                }
+                
             }
             .onAppear {
-                noteApp.fetchData()
+                noteApp.fetchData(character: character)
             }
             .refreshable {
-                noteApp.fetchData()
+                noteApp.fetchData(character: character)
             }
 
         }
     }
 }
 
-struct NoteView_Previews: PreviewProvider {
+struct CharacterNoteView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteView()
+        CharacterNoteView(character: "Rick Sanchez")
     }
 }

@@ -31,6 +31,23 @@ class NoteViewModel : ObservableObject {
                 }
         }
     }
+    func fetchData(character : String) {
+        notes.removeAll()
+        db.collection("Notes").whereField("character", isEqualTo: character)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        do {
+                            self.notes.append(try document.data(as: NoteModel.self))
+                        } catch {
+                            print(error)
+                        }
+                    }
+                }
+        }
+    }
     
     func saveData(note : NoteModel) {
         if let id = note.id {
@@ -41,7 +58,8 @@ class NoteViewModel : ObservableObject {
                 // Set title and NoteData
                 noteRef.updateData([
                     "title": note.title,
-                    "noteData": note.noteData
+                    "noteData": note.noteData,
+                    "character": note.character
                 ]) { err in
                     if let err = err {
                         print("Error updating document: \(err)")
@@ -56,7 +74,8 @@ class NoteViewModel : ObservableObject {
                 var ref: DocumentReference? = nil
                 ref = db.collection("Notes").addDocument(data: [
                     "title": note.title,
-                    "noteData": note.noteData
+                    "noteData": note.noteData,
+                    "character": note.character
                 ]) { err in
                     if let err = err {
                         print("Error adding document: \(err)")

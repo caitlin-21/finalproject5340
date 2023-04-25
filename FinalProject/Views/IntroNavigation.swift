@@ -2,7 +2,7 @@
 //  IntroNavigation.swift
 //  FinalProject
 //
-//  Created by Sherry Johnson on 4/24/23.
+//  Created by Caitlin Johnson on 4/24/23.
 //
 
 import SwiftUI
@@ -29,6 +29,13 @@ struct IntroNavigation: View {
                 label: {
                     Text("Character List")
                 }
+                    Section {
+                        NavigationLink {
+                            NoteByCharacter()
+                        } label: {
+                            Text("Notes by Character")
+                        }
+                    }
                     Section {
                         NavigationLink {
                             NoteView()
