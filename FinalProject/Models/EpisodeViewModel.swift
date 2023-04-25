@@ -2,7 +2,7 @@
 //  EpisodeViewModel.swift
 //  FinalProject
 //
-//  Created by Sherry Johnson on 4/25/23.
+//  Created by Caitlin Johnson on 4/25/23.
 //
 
 import Foundation

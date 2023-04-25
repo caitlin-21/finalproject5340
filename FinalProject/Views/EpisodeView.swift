@@ -18,7 +18,8 @@ struct EpisodeView: View {
                             NavigationLink {
                                 EpisodeDetailView(episode: episode)
                             } label: {
-                                Text("Episode \(episode)")
+                                let substrings = episode.split(separator: "/")
+                                Text("Episode " + String(substrings[substrings.endIndex-1]))
                             }
                     }
                 }
