@@ -31,6 +31,10 @@
 		402BC9D129F719AF006D666B /* IntroNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9D029F719AE006D666B /* IntroNavigation.swift */; };
 		402BC9D329F72B42006D666B /* CharacterNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9D229F72B42006D666B /* CharacterNoteView.swift */; };
 		402BC9D529F72CC1006D666B /* NoteByCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9D429F72CC1006D666B /* NoteByCharacter.swift */; };
+		402BC9D729F85854006D666B /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9D629F85854006D666B /* EpisodeModel.swift */; };
+		402BC9D929F85901006D666B /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9D829F85901006D666B /* EpisodeViewModel.swift */; };
+		402BC9DB29F85C0C006D666B /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9DA29F85C0C006D666B /* EpisodeView.swift */; };
+		402BC9DD29F85FB2006D666B /* EpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BC9DC29F85FB2006D666B /* EpisodeDetailView.swift */; };
 		409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A429CD1EE500FFF51B /* CharacterViewModel.swift */; };
 		409344A729CD200E00FFF51B /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344A629CD200E00FFF51B /* CharacterModel.swift */; };
 		409344AB29CD289900FFF51B /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409344AA29CD289900FFF51B /* CharacterDetails.swift */; };
@@ -53,6 +57,10 @@
 		402BC9D029F719AE006D666B /* IntroNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroNavigation.swift; sourceTree = "<group>"; };
 		402BC9D229F72B42006D666B /* CharacterNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNoteView.swift; sourceTree = "<group>"; };
 		402BC9D429F72CC1006D666B /* NoteByCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteByCharacter.swift; sourceTree = "<group>"; };
+		402BC9D629F85854006D666B /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		402BC9D829F85901006D666B /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		402BC9DA29F85C0C006D666B /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		402BC9DC29F85FB2006D666B /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
 		409344A429CD1EE500FFF51B /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		409344A629CD200E00FFF51B /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		409344AA29CD289900FFF51B /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
@@ -104,6 +112,8 @@
 				402BC9D029F719AE006D666B /* IntroNavigation.swift */,
 				402BC9D229F72B42006D666B /* CharacterNoteView.swift */,
 				402BC9D429F72CC1006D666B /* NoteByCharacter.swift */,
+				402BC9DA29F85C0C006D666B /* EpisodeView.swift */,
+				402BC9DC29F85FB2006D666B /* EpisodeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +127,8 @@
 				402BC9C629F4A3FB006D666B /* SignUpModel.swift */,
 				402BC9C829F5C448006D666B /* NoteModel.swift */,
 				402BC9CA29F5C4AC006D666B /* NoteViewModel.swift */,
+				402BC9D629F85854006D666B /* EpisodeModel.swift */,
+				402BC9D829F85901006D666B /* EpisodeViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,14 +269,18 @@
 				402BC9CD29F5C4F2006D666B /* NoteView.swift in Sources */,
 				402BC9CB29F5C4AC006D666B /* NoteViewModel.swift in Sources */,
 				409344A529CD1EE500FFF51B /* CharacterViewModel.swift in Sources */,
+				402BC9D729F85854006D666B /* EpisodeModel.swift in Sources */,
 				402BC9D129F719AF006D666B /* IntroNavigation.swift in Sources */,
+				402BC9DB29F85C0C006D666B /* EpisodeView.swift in Sources */,
 				402BC9C729F4A3FB006D666B /* SignUpModel.swift in Sources */,
 				ACF5E04229BE957F00DD981A /* CharacterView.swift in Sources */,
 				402BC9C929F5C448006D666B /* NoteModel.swift in Sources */,
+				402BC9DD29F85FB2006D666B /* EpisodeDetailView.swift in Sources */,
 				409344B129CD5CFA00FFF51B /* InfoModel.swift in Sources */,
 				409344AD29CD290F00FFF51B /* CharacterImageView.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* finalApp.swift in Sources */,
 				402BC9D529F72CC1006D666B /* NoteByCharacter.swift in Sources */,
+				402BC9D929F85901006D666B /* EpisodeViewModel.swift in Sources */,
 				402BC99729F4883B006D666B /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

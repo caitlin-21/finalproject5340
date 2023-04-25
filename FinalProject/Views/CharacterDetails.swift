@@ -23,7 +23,11 @@ struct CharacterDetails: View {
                 Text("Status: \(data.status)")
                 Text("Species: \(data.species)")
                 Text("Gender: \(data.gender)")
-                Text("Appearances: \(data.episode.count)")
+                NavigationLink {
+                    EpisodeView(episodes: data.episode)
+                } label: {
+                    Text("Appearances: \(data.episode.count)")
+                }
                 Section {
                     NavigationLink {
                         NoteDetail(note: $note, character: data.name)

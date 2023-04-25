@@ -1,6 +1,6 @@
 //
 //  CharacterViewModel.swift
-//  FinalProject
+//  Assignment3
 //
 //  Created by Caitlin Johnson on 3/23/23.
 //

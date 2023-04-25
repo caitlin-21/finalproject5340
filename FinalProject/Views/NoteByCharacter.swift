@@ -2,7 +2,7 @@
 //  NoteByCharacter.swift
 //  FinalProject
 //
-//  Created by Sherry Johnson on 4/24/23.
+//  Created by Caitlin Johnson on 4/24/23.
 //
 
 import SwiftUI
