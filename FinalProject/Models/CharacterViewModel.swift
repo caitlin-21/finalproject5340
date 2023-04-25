@@ -11,14 +11,13 @@ import Foundation
 class CharacterViewModel : ObservableObject {
     
     @Published private(set) var characterData = [CharacterModel]()
-    private let url = "https://rickandmortyapi.com/api/character"
     
-    @MainActor
     func fetchData() {
-        if let url = URL(string: url) {
+        let url = "https://rickandmortyapi.com/api/character"
+        if let urltwo = URL(string: url) {
             URLSession
                 .shared
-                .dataTask(with: url) { (data, response, error) in
+                .dataTask(with: urltwo) { (data, response, error) in
                     if let error = error {
                         print(error)
                     } else {
@@ -26,7 +25,9 @@ class CharacterViewModel : ObservableObject {
                             var results : CharacterResults? = nil
                             do {
                                 results = try JSONDecoder().decode(CharacterResults.self, from: data)
-                                self.characterData = results!.results
+                                DispatchQueue.main.async {
+                                    self.characterData = results!.results
+                                }
                             } catch {
                                 print(error)
                             }
@@ -36,4 +37,20 @@ class CharacterViewModel : ObservableObject {
                 }.resume()
         }
     }
+    @MainActor
+    func fetchData(page: String) async {
+            let url = "https://rickandmortyapi.com/api/character?page=\(page)"
+            if let urltwo = URL(string: url) {
+                do {
+                    let (data, _) = try await URLSession
+                        .shared
+                        .data(from: urltwo)
+                    let results = try JSONDecoder().decode(CharacterResults.self, from: data)
+                    self.characterData = results.results
+                } catch {
+                    print(error)
+                }
+
+            }
+        }
 }

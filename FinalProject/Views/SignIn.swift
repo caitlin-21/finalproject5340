@@ -24,7 +24,7 @@ import FirebaseAuth
         
         var content: some View {
                     VStack() {
-                        Text("Rick and Morty Notes")
+                        Text("Rick and Morty Pocket Guide")
                             .font(.largeTitle).foregroundColor(Color.white)
                             .padding([.top, .bottom], 40)
                         
