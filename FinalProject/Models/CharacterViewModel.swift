@@ -13,6 +13,7 @@ class CharacterViewModel : ObservableObject {
     @Published private(set) var characterData = [CharacterModel]()
     private let url = "https://rickandmortyapi.com/api/character"
     
+    @MainActor
     func fetchData() {
         if let url = URL(string: url) {
             URLSession
